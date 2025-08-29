@@ -1,4 +1,4 @@
-// ❤️ Heart Button Functionality
+// heart button
 let heartCount = 0;
 const heartCounter = document.getElementById("heart-count");
 const heartClick = document.getElementsByClassName("heart");
@@ -10,12 +10,12 @@ for (let i = 0; i < heartClick.length; i++) {
   };
 }
 
-// 💰 Coin and Call History Functionality
+// coin functionality
 let coins = 100;
 const coinDisplay = document.getElementById("coin");
 const historyList = document.getElementById("history-list");
 
-// Call Buttons and Related IDs
+// Call button functionalities
 const services = [
   {
     callBtnId: "national-emergecy-call",
@@ -94,17 +94,17 @@ for (const service of services) {
   });
 }
 
-// 🧹 Clear History Button
+// clearing history
 const clearBtn = document.getElementById("clear-history");
 clearBtn.addEventListener("click", function () {
   historyList.innerHTML = "";
 });
 
-// 📋 Copy Button Functionality
+// copy button works
 let copyCount = 0;
 const copyCountDisplay = document.getElementById("copy-count");
 
-// List of all Copy Buttons with related number IDs
+// id list in an array
 const copyButtons = [
   { btnId: "neCopyBtn", numberId: "national-emergecy-number" },
   { btnId: "pCopyBtn", numberId: "police-number" },
